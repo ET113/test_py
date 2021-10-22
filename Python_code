@@ -1,0 +1,51 @@
+# Online Python compiler (interpreter) to run Python online.
+# https://www.programiz.com/python-programming/online-compiler/
+# Write Python 3 code in this online editor and run it.
+#====================== String manipulation#==========================     
+### WK  answer=input("Would you like to continue?")
+answer='n'
+if (answer=='n' or answer.lower()=='no'):
+    print("Exiting")
+elif (answer=='y' or answer.lower()=="yes"):
+    print("Continuing ...")
+    print("Complete!")
+else:
+    print("Please try again and respond with yes or no.")
+    
+############   Format string literals  #########
+first_string = 'A literal string'
+second_string = "A second literal string"
+string3=first_string+second_string
+print(first_string,second_string)
+print(string3)
+print(second_string == first_string)
+print('A single quoted literal')
+print("String with an \' escaped single quote")
+print("*string with a \n new line character")
+print("*string with a \t tab character")
+
+message = str.capitalize('first message')
+print(message)
+message = 'second message'.capitalize()
+print(message)
+message = "upper message"
+print(message.upper())
+message = 'title  message'
+print(message.title())
+print("Swapcase Message".swapcase())
+print('MiSSissippi'.count('s'))
+print('racecar'.startswith('ra'))
+
+message = 'Brown fox jumps over the lazy dog'
+print(message.find('o'))  ## first occour of 'o'
+print(message.count('o'))
+message = '    middle     '
+print('***' + message.lstrip()+'***','-----***' + message.rstrip()+'***')
+print('***' + message.strip() + '***')
+# =================================================
+width = 5
+height = 10
+print(f'The perimeter is {(2 * width) + (2 * height)} and the area is {width * height}.')
+
+print(f'.{value:^25}.')
+print(f'.{value:-^25}.')
